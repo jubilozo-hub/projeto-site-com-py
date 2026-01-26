@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>peterest</title>
+    
+    <title>
+    {% block title %}
+        peterest
+    {% endblock %}
+    </title>
+
+
 </head>
+{% block body %}
 <body>
     
     <h1>Bem vindo cadastre-se, e adicione seu bb.</h1>
@@ -13,4 +21,5 @@
  
 
 </body>
+{% endblock %}
 </html>
