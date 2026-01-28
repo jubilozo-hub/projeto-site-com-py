@@ -1,11 +1,11 @@
 # criaçao do banco de dados
 
-from peterest import database, Login_Manager
+from peterest import database, login_manager
 from datetime import datetime, timezone
 from flask_login import UserMixin
 
 # processo padrao de uma funçao  que carrega o id do usuario apartir do id
-@Login_Manager.user_loader
+@login_manager.user_loader
 def load_usuario(id_usuario):
     return Usuario.query.get(int(id_usuario))
 
